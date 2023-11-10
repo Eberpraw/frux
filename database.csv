@@ -1,0 +1,61 @@
+Supermarket Name,EAN,Product Name,Category,Price (DKK),Quantity,Brand,Discount,Availability
+Rema 1000,1234567890001,Apple,Fruits,10.50,kg,Organic Apples,5%,In Stock
+Rema 1000,2345678900002,Bread,Bakery,8.75,loaf,Brand X,10%,In Stock
+Rema 1000,3456789010003,Milk,Dairy,6.25,liter,Farm Fresh,0%,In Stock
+Rema 1000,4567890120004,Eggs,Dairy,15.00,dozen,Happy Hens,8%,In Stock
+Rema 1000,5678901230005,Chicken,Meat,30.75,kg,Free Range,15%,In Stock
+Rema 1000,6789012340006,Pasta,Grocery,5.50,kg,Italian Delight,0%,In Stock
+Rema 1000,7890123450007,Orange Juice,Beverages,12.25,liter,Orchard Fresh,2%,In Stock
+Rema 1000,8901234560008,Yogurt,Dairy,9.80,pack,Greek Delight,0%,In Stock
+Rema 1000,9012345670009,Cheese,Dairy,18.75,kg,Artisanal Cheddar,5%,In Stock
+Rema 1000,1234567890010,Salmon,Seafood,42.90,kg,Wild Catch,12%,In Stock
+Rema 1000,2345678900011,Chocolate,Sweets,8.50,bar,Sweet Delight,15%,In Stock
+Rema 1000,3456789010012,Coffee, Beverages,35.00,kg,Arabica Blend,5%,In Stock
+Rema 1000,4567890120013,Tomato,Canned Goods,6.75,kg,Organic Tomatoes,0%,In Stock
+Rema 1000,5678901230014,Toothpaste,Personal Care,12.50,unit,Fresh Smile,3%,In Stock
+Rema 1000,6789012340015,Shampoo,Personal Care,18.25,unit,Silky Locks,8%,In Stock
+Rema 1000,7890123450016,Laundry Detergent,Household,24.00,liter,Clean & Fresh,0%,In Stock
+Rema 1000,8901234560017,Paper Towels,Household,8.90,roll,Soft & Strong,0%,In Stock
+Rema 1000,9012345670018,Light Bulbs,Household,15.75,pack,Eco Glow,10%,In Stock
+Rema 1000,1234567890019,Phone Charger,Electronics,30.00,unit,Tech Power,5%,In Stock
+Rema 1000,2345678900020,Notebook,Stationery,25.50,unit,Office Pro,0%,In Stock
+Netto,1234567890021,Apple,Fruits,11.20,kg,Organic Apples,5%,In Stock
+Netto,2345678900022,Bread,Bakery,9.25,loaf,Brand X,10%,In Stock
+Netto,3456789010023,Milk,Dairy,6.75,liter,Farm Fresh,0%,In Stock
+Netto,4567890120024,Eggs,Dairy,14.50,dozen,Happy Hens,8%,In Stock
+Netto,5678901230025,Chicken,Meat,32.00,kg,Free Range,15%,In Stock
+Netto,6789012340026,Pasta,Grocery,6.20,kg,Italian Delight,0%,In Stock
+Netto,7890123450027,Orange Juice,Beverages,13.10,liter,Orchard Fresh,2%,In Stock
+Netto,8901234560028,Yogurt,Dairy,10.50,pack,Greek Delight,0%,In Stock
+Netto,9012345670029,Cheese,Dairy,19.90,kg,Artisanal Cheddar,5%,In Stock
+Netto,1234567890030,Salmon,Seafood,45.25,kg,Wild Catch,12%,In Stock
+Netto,2345678900031,Chocolate,Sweets,7.90,bar,Sweet Delight,12%,In Stock
+Netto,3456789010032,Coffee, Beverages,33.50,kg,Arabica Blend,3%,In Stock
+Netto,4567890120033,Tomato,Canned Goods,7.25,kg,Organic Tomatoes,0%,In Stock
+Netto,5678901230034,Toothpaste,Personal Care,11.75,unit,Fresh Smile,2%,In Stock
+Netto,6789012340035,Shampoo,Personal Care,17.50,unit,Silky Locks,6%,In Stock
+Netto,7890123450036,Laundry Detergent,Household,22.50,liter,Clean & Fresh,0%,In Stock
+Netto,8901234560037,Paper Towels,Household,9.25,roll,Soft & Strong,0%,In Stock
+Netto,9012345670038,Light Bulbs,Household,14.00,pack,Eco Glow,8%,In Stock
+Netto,1234567890039,Phone Charger,Electronics,28.50,unit,Tech Power,4%,In Stock
+Netto,2345678900040,Notebook,Stationery,23.75,unit,Office Pro,0%,In Stock
+Føtex,1234567890041,Apple,Fruits,14.50,kg,Organic Apples,5%,In Stock
+Føtex,2345678900042,Bread,Bakery,12.50,loaf,Brand X,10%,In Stock
+Føtex,3456789010043,Milk,Dairy,9.75,liter,Farm Fresh,0%,In Stock
+Føtex,4567890120044,Eggs,Dairy,18.00,dozen,Happy Hens,8%,In Stock
+Føtex,5678901230045,Chicken,Meat,38.50,kg,Free Range,15%,In Stock
+Føtex,6789012340046,Pasta,Grocery,8.90,kg,Italian Delight,0%,In Stock
+Føtex,7890123450047,Orange Juice,Beverages,16.50,liter,Orchard Fresh,2%,In Stock
+Føtex,8901234560048,Yogurt,Dairy,14.25,pack,Greek Delight,0%,In Stock
+Føtex,9012345670049,Cheese,Dairy,24.00,kg,Artisanal Cheddar,5%,In Stock
+Føtex,1234567890050,Salmon,Seafood,52.00,kg,Wild Catch,12%,In Stock
+Føtex,2345678900051,Chocolate,Sweets,11.25,bar,Sweet Delight,18%,In Stock
+Føtex,3456789010052,Coffee, Beverages,42.00,kg,Arabica Blend,7%,In Stock
+Føtex,4567890120053,Tomato,Canned Goods,9.50,kg,Organic Tomatoes,0%,In Stock
+Føtex,5678901230054,Toothpaste,Personal Care,15.00,unit,Fresh Smile,4%,In Stock
+Føtex,6789012340055,Shampoo,Personal Care,22.75,unit,Silky Locks,10%,In Stock
+Føtex,7890123450056,Laundry Detergent,Household,28.00,liter,Clean & Fresh,0%,In Stock
+Føtex,8901234560057,Paper Towels,Household,11.50,roll,Soft & Strong,0%,In Stock
+Føtex,9012345670058,Light Bulbs,Household,20.25,pack,Eco Glow,12%,In Stock
+Føtex,1234567890059,Phone Charger,Electronics,36.00,unit,Tech Power,6%,In Stock
+Føtex,2345678900060,Notebook,Stationery,32.50,unit,Office Pro,0%,In Stock
