@@ -17,10 +17,10 @@ def get_product_details(existing_prices):
         'Price (DKK)': price_dkk,
     }
 
-csv_file_path = '/Users/easypoker/Documents/Digitalisering og applikationsudvikling/P7/frux/database.csv'
+github_csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/ee786ff7897e4963ea57b1dc0f2bd73724bf9190/database.csv'
 
 # Read existing prices from the CSV file
-existing_prices_df = pd.read_csv(csv_file_path)
+existing_prices_df = pd.read_csv(github_csv_url)
 existing_prices = dict(zip(existing_prices_df['Product Name'], existing_prices_df['Price (DKK)']))
 
 # Get user input for multiple products
@@ -41,5 +41,3 @@ total_price = sum(product['Price (DKK)'] for product in products_data)
 # Display the total price
 print(f"\nTotal Price for Selected Products: {total_price} DKK")
 print("Products added successfully.")
-
-#test
