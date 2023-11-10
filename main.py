@@ -41,3 +41,5 @@ total_price = sum(product['Price (DKK)'] for product in products_data)
 # Display the total price
 print(f"\nTotal Price for Selected Products: {total_price} DKK")
 print("Products added successfully.")
+
+#test
