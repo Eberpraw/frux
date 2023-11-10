@@ -9,7 +9,8 @@ def get_product_details(existing_prices):
         price_dkk = existing_prices[product_name]
         print(f"Existing price for {product_name}: {price_dkk} DKK")
     else:
-        print("INVALID PRODUCT")
+        print(f"Price for {product_name} not found in the CSV file.")
+        price_dkk = None
 
     return {
         'Product Name': product_name,
@@ -31,12 +32,12 @@ while True:
         break
 
     product_details = get_product_details(existing_prices)
-    products_data.append(product_details)
+    if product_details['Price (DKK)'] is not None:
+        products_data.append(product_details)
 
-# Convert the list of dictionaries to a DataFrame
-products_df = pd.DataFrame(products_data)
+# Calculate the total price
+total_price = sum(product['Price (DKK)'] for product in products_data)
 
-# Append the DataFrame to the CSV file
-products_df.to_csv(csv_file_path, mode='a', header=not pd.DataFrame(pd.read_csv(csv_file_path)).shape[0], index=False)
-
+# Display the total price
+print(f"\nTotal Price for Selected Products: {total_price} DKK")
 print("Products added successfully.")
