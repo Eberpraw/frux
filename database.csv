@@ -1,61 +1,151 @@
-Supermarket Name,EAN,Product Name,Category,Price (DKK),Quantity,Brand,Discount,Availability
-Rema 1000,1234567890001,Apple,Fruits,10.50,kg,Organic Apples,5%,In Stock
-Rema 1000,2345678900002,Bread,Bakery,8.75,loaf,Brand X,10%,In Stock
-Rema 1000,3456789010003,Milk,Dairy,6.25,liter,Farm Fresh,0%,In Stock
-Rema 1000,4567890120004,Eggs,Dairy,15.00,dozen,Happy Hens,8%,In Stock
-Rema 1000,5678901230005,Chicken,Meat,30.75,kg,Free Range,15%,In Stock
-Rema 1000,6789012340006,Pasta,Grocery,5.50,kg,Italian Delight,0%,In Stock
-Rema 1000,7890123450007,Orange Juice,Beverages,12.25,liter,Orchard Fresh,2%,In Stock
-Rema 1000,8901234560008,Yogurt,Dairy,9.80,pack,Greek Delight,0%,In Stock
-Rema 1000,9012345670009,Cheese,Dairy,18.75,kg,Artisanal Cheddar,5%,In Stock
-Rema 1000,1234567890010,Salmon,Seafood,42.90,kg,Wild Catch,12%,In Stock
-Rema 1000,2345678900011,Chocolate,Sweets,8.50,bar,Sweet Delight,15%,In Stock
-Rema 1000,3456789010012,Coffee, Beverages,35.00,kg,Arabica Blend,5%,In Stock
-Rema 1000,4567890120013,Tomato,Canned Goods,6.75,kg,Organic Tomatoes,0%,In Stock
-Rema 1000,5678901230014,Toothpaste,Personal Care,12.50,unit,Fresh Smile,3%,In Stock
-Rema 1000,6789012340015,Shampoo,Personal Care,18.25,unit,Silky Locks,8%,In Stock
-Rema 1000,7890123450016,Laundry Detergent,Household,24.00,liter,Clean & Fresh,0%,In Stock
-Rema 1000,8901234560017,Paper Towels,Household,8.90,roll,Soft & Strong,0%,In Stock
-Rema 1000,9012345670018,Light Bulbs,Household,15.75,pack,Eco Glow,10%,In Stock
-Rema 1000,1234567890019,Phone Charger,Electronics,30.00,unit,Tech Power,5%,In Stock
-Rema 1000,2345678900020,Notebook,Stationery,25.50,unit,Office Pro,0%,In Stock
-Netto,1234567890021,Apple,Fruits,11.20,kg,Organic Apples,5%,In Stock
-Netto,2345678900022,Bread,Bakery,9.25,loaf,Brand X,10%,In Stock
-Netto,3456789010023,Milk,Dairy,6.75,liter,Farm Fresh,0%,In Stock
-Netto,4567890120024,Eggs,Dairy,14.50,dozen,Happy Hens,8%,In Stock
-Netto,5678901230025,Chicken,Meat,32.00,kg,Free Range,15%,In Stock
-Netto,6789012340026,Pasta,Grocery,6.20,kg,Italian Delight,0%,In Stock
-Netto,7890123450027,Orange Juice,Beverages,13.10,liter,Orchard Fresh,2%,In Stock
-Netto,8901234560028,Yogurt,Dairy,10.50,pack,Greek Delight,0%,In Stock
-Netto,9012345670029,Cheese,Dairy,19.90,kg,Artisanal Cheddar,5%,In Stock
-Netto,1234567890030,Salmon,Seafood,45.25,kg,Wild Catch,12%,In Stock
-Netto,2345678900031,Chocolate,Sweets,7.90,bar,Sweet Delight,12%,In Stock
-Netto,3456789010032,Coffee, Beverages,33.50,kg,Arabica Blend,3%,In Stock
-Netto,4567890120033,Tomato,Canned Goods,7.25,kg,Organic Tomatoes,0%,In Stock
-Netto,5678901230034,Toothpaste,Personal Care,11.75,unit,Fresh Smile,2%,In Stock
-Netto,6789012340035,Shampoo,Personal Care,17.50,unit,Silky Locks,6%,In Stock
-Netto,7890123450036,Laundry Detergent,Household,22.50,liter,Clean & Fresh,0%,In Stock
-Netto,8901234560037,Paper Towels,Household,9.25,roll,Soft & Strong,0%,In Stock
-Netto,9012345670038,Light Bulbs,Household,14.00,pack,Eco Glow,8%,In Stock
-Netto,1234567890039,Phone Charger,Electronics,28.50,unit,Tech Power,4%,In Stock
-Netto,2345678900040,Notebook,Stationery,23.75,unit,Office Pro,0%,In Stock
-Føtex,1234567890041,Apple,Fruits,14.50,kg,Organic Apples,5%,In Stock
-Føtex,2345678900042,Bread,Bakery,12.50,loaf,Brand X,10%,In Stock
-Føtex,3456789010043,Milk,Dairy,9.75,liter,Farm Fresh,0%,In Stock
-Føtex,4567890120044,Eggs,Dairy,18.00,dozen,Happy Hens,8%,In Stock
-Føtex,5678901230045,Chicken,Meat,38.50,kg,Free Range,15%,In Stock
-Føtex,6789012340046,Pasta,Grocery,8.90,kg,Italian Delight,0%,In Stock
-Føtex,7890123450047,Orange Juice,Beverages,16.50,liter,Orchard Fresh,2%,In Stock
-Føtex,8901234560048,Yogurt,Dairy,14.25,pack,Greek Delight,0%,In Stock
-Føtex,9012345670049,Cheese,Dairy,24.00,kg,Artisanal Cheddar,5%,In Stock
-Føtex,1234567890050,Salmon,Seafood,52.00,kg,Wild Catch,12%,In Stock
-Føtex,2345678900051,Chocolate,Sweets,11.25,bar,Sweet Delight,18%,In Stock
-Føtex,3456789010052,Coffee, Beverages,42.00,kg,Arabica Blend,7%,In Stock
-Føtex,4567890120053,Tomato,Canned Goods,9.50,kg,Organic Tomatoes,0%,In Stock
-Føtex,5678901230054,Toothpaste,Personal Care,15.00,unit,Fresh Smile,4%,In Stock
-Føtex,6789012340055,Shampoo,Personal Care,22.75,unit,Silky Locks,10%,In Stock
-Føtex,7890123450056,Laundry Detergent,Household,28.00,liter,Clean & Fresh,0%,In Stock
-Føtex,8901234560057,Paper Towels,Household,11.50,roll,Soft & Strong,0%,In Stock
-Føtex,9012345670058,Light Bulbs,Household,20.25,pack,Eco Glow,12%,In Stock
-Føtex,1234567890059,Phone Charger,Electronics,36.00,unit,Tech Power,6%,In Stock
-Føtex,2345678900060,Notebook,Stationery,32.50,unit,Office Pro,0%,In Stock
+Supermarket Name,EAN,Product Name,Category,Price (DKK),Quantity,Stock
+Rema 1000,1234567890001,Apple,Fruits,10.50,kg,1500
+Rema 1000,2345678900002,Carrot,Vegetables,4.75,kg,1200
+Rema 1000,3456789010003,Banana,Fruits,8.25,kg,1000
+Rema 1000,4567890120004,Spinach,Vegetables,6.50,kg,800
+Rema 1000,5678901230005,Strawberry,Fruits,18.75,kg,500
+Rema 1000,6789012340006,Chicken,Meat,30.75,kg,20
+Rema 1000,7890123450007,Beef,Meat,45.00,kg,15
+Rema 1000,8901234560008,Pork,Meat,28.50,kg,25
+Rema 1000,9012345670009,Lamb,Meat,55.00,kg,10
+Rema 1000,1234567890010,Sausage,Meat,15.00,kg,30
+Rema 1000,2345678900011,Milk,Dairy,6.25,liter,50
+Rema 1000,3456789010012,Yogurt,Dairy,9.80,pack,40
+Rema 1000,4567890120013,Cheese,Dairy,18.75,kg,15
+Rema 1000,5678901230014,Butter,Dairy,14.50,pack,25
+Rema 1000,6789012340015,Ice Cream,Dairy,22.00,liter,15
+Rema 1000,7890123450016,Spaghetti,Pasta,5.50,kg,1000
+Rema 1000,8901234560017,Rice,Grocery,12.00,kg,800
+Rema 1000,9012345670018,Couscous,Grocery,8.75,kg,500
+Rema 1000,1234567890019,Quinoa,Grocery,20.50,kg,300
+Rema 1000,2345678900020,Penne Pasta,Grocery,7.25,kg,1200
+Rema 1000,3456789010021,Orange Juice,Beverages,12.25,liter,25
+Rema 1000,4567890120022,Coffee,Beverages,35.00,kg,30
+Rema 1000,5678901230023,Green Tea,Beverages,15.75,pack,40
+Rema 1000,6789012340024,Soda,Beverages,6.50,liter,50
+Rema 1000,7890123450025,Mineral Water,Beverages,4.00,liter,100
+Rema 1000,8901234560026,Towel,Household,10.75,pack,60
+Rema 1000,9012345670027,Flashlight,Electronics,15.00,unit,15
+Rema 1000,1234567890028,Candle,Household,5.50,pack,80
+Rema 1000,2345678900029,Sunscreen,Personal Care,18.50,unit,20
+Rema 1000,3456789010030,Notebook,Stationery,22.00,unit,30
+Netto,1234567890001,Apple,Fruits,9.75,kg,1500
+Netto,2345678900002,Carrot,Vegetables,5.25,kg,1200
+Netto,3456789010003,Banana,Fruits,7.50,kg,1000
+Netto,4567890120004,Spinach,Vegetables,5.75,kg,800
+Netto,5678901230005,Strawberry,Fruits,16.25,kg,500
+Netto,6789012340006,Chicken,Meat,28.50,kg,20
+Netto,7890123450007,Beef,Meat,42.00,kg,15
+Netto,8901234560008,Pork,Meat,26.00,kg,25
+Netto,9012345670009,Lamb,Meat,50.00,kg,10
+Netto,1234567890010,Sausage,Meat,13.50,kg,30
+Netto,2345678900011,Milk,Dairy,5.75,liter,50
+Netto,3456789010012,Yogurt,Dairy,8.90,pack,40
+Netto,4567890120013,Cheese,Dairy,16.50,kg,15
+Netto,5678901230014,Butter,Dairy,12.75,pack,25
+Netto,6789012340015,Ice Cream,Dairy,19.50,liter,15
+Netto,7890123450016,Spaghetti,Pasta,4.75,kg,1000
+Netto,8901234560017,Rice,Grocery,10.50,kg,800
+Netto,9012345670018,Couscous,Grocery,7.25,kg,500
+Netto,1234567890019,Quinoa,Grocery,18.00,kg,300
+Netto,2345678900020,Penne Pasta,Grocery,6.50,kg,1200
+Netto,3456789010021,Orange Juice,Beverages,11.50,liter,25
+Netto,4567890120022,Coffee,Beverages,32.00,kg,30
+Netto,5678901230023,Green Tea,Beverages,14.25,pack,40
+Netto,6789012340024,Soda,Beverages,5.75,liter,50
+Netto,7890123450025,Mineral Water,Beverages,3.50,liter,100
+Netto,8901234560026,Towel,Household,9.50,pack,60
+Netto,9012345670027,Flashlight,Electronics,13.50,unit,15
+Netto,1234567890028,Candle,Household,4.75,pack,80
+Netto,2345678900029,Sunscreen,Personal Care,16.50,unit,20
+Netto,3456789010030,Notebook,Stationery,20.00,unit,30
+Føtex,1234567890001,Apple,Fruits,11.20,kg,1500
+Føtex,2345678900002,Carrot,Vegetables,4.90,kg,1200
+Føtex,3456789010003,Banana,Fruits,9.00,kg,1000
+Føtex,4567890120004,Spinach,Vegetables,7.00,kg,800
+Føtex,5678901230005,Strawberry,Fruits,20.00,kg,500
+Føtex,6789012340006,Chicken,Meat,32.50,kg,20
+Føtex,7890123450007,Beef,Meat,48.00,kg,15
+Føtex,8901234560008,Pork,Meat,30.00,kg,25
+Føtex,9012345670009,Lamb,Meat,58.00,kg,10
+Føtex,1234567890010,Sausage,Meat,16.00,kg,30
+Føtex,2345678900011,Milk,Dairy,7.00,liter,50
+Føtex,3456789010012,Yogurt,Dairy,10.90,pack,40
+Føtex,4567890120013,Cheese,Dairy,20.00,kg,15
+Føtex,5678901230014,Butter,Dairy,15.50,pack,25
+Føtex,6789012340015,Ice Cream,Dairy,24.00,liter,15
+Føtex,7890123450016,Spaghetti,Pasta,6.00,kg,1000
+Føtex,8901234560017,Rice,Grocery,13.50,kg,800
+Føtex,9012345670018,Couscous,Grocery,9.50,kg,500
+Føtex,1234567890019,Quinoa,Grocery,22.50,kg,300
+Føtex,2345678900020,Penne Pasta,Grocery,8.00,kg,1200
+Føtex,3456789010021,Orange Juice,Beverages,13.50,liter,25
+Føtex,4567890120022,Coffee,Beverages,38.00,kg,30
+Føtex,5678901230023,Green Tea,Beverages,17.00,pack,40
+Føtex,6789012340024,Soda,Beverages,7.00,liter,50
+Føtex,7890123450025,Mineral Water,Beverages,4.50,liter,100
+Føtex,8901234560026,Towel,Household,11.50,pack,60
+Føtex,9012345670027,Flashlight,Electronics,17.00,unit,15
+Føtex,1234567890028,Candle,Household,6.00,pack,80
+Føtex,2345678900029,Sunscreen,Personal Care,20.00,unit,20
+Føtex,3456789010030,Notebook,Stationery,24.50,unit,30
+Coop 365,1234567890001,Apple,Fruits,10.90,kg,1500
+Coop 365,2345678900002,Carrot,Vegetables,5.00,kg,1200
+Coop 365,3456789010003,Banana,Fruits,8.50,kg,1000
+Coop 365,4567890120004,Spinach,Vegetables,6.80,kg,800
+Coop 365,5678901230005,Strawberry,Fruits,19.50,kg,500
+Coop 365,6789012340006,Chicken,Meat,31.80,kg,20
+Coop 365,7890123450007,Beef,Meat,36.50,kg,15
+Coop 365,8901234560008,Pork,Meat,29.50,kg,25
+Coop 365,9012345670009,Lamb,Meat,56.50,kg,10
+Coop 365,1234567890010,Sausage,Meat,15.50,kg,30
+Coop 365,2345678900011,Milk,Dairy,6.80,liter,50
+Coop 365,3456789010012,Yogurt,Dairy,10.50,pack,40
+Coop 365,4567890120013,Cheese,Dairy,19.50,kg,15
+Coop 365,5678901230014,Butter,Dairy,15.00,pack,25
+Coop 365,6789012340015,Ice Cream,Dairy,23.50,liter,15
+Coop 365,7890123450016,Spaghetti,Pasta,5.80,kg,1000
+Coop 365,8901234560017,Rice,Grocery,12.80,kg,800
+Coop 365,9012345670018,Couscous,Grocery,9.00,kg,500
+Coop 365,1234567890019,Quinoa,Grocery,21.00,kg,300
+Coop 365,2345678900020,Penne Pasta,Grocery,7.00,kg,1200
+Coop 365,3456789010021,Orange Juice,Beverages,13.80,liter,25
+Coop 365,4567890120022,Coffee,Beverages,36.50,kg,30
+Coop 365,5678901230023,Green Tea,Beverages,16.50,pack,40
+Coop 365,6789012340024,Soda,Beverages,6.80,liter,50
+Coop 365,7890123450025,Mineral Water,Beverages,4.30,liter,100
+Coop 365,8901234560026,Towel,Household,11.00,pack,60
+Coop 365,9012345670027,Flashlight,Electronics,16.50,unit,15
+Coop 365,1234567890028,Candle,Household,5.80,pack,80
+Coop 365,2345678900029,Sunscreen,Personal Care,19.50,unit,20
+Coop 365,3456789010030,Notebook,Stationery,24.00,unit,30
+Lidl,1234567890001,Apple,Fruits,9.25,kg,1500
+Lidl,2345678900002,Carrot,Vegetables,4.50,kg,1200
+Lidl,3456789010003,Banana,Fruits,8.00,kg,1000
+Lidl,4567890120004,Spinach,Vegetables,6.00,kg,800
+Lidl,5678901230005,Strawberry,Fruits,17.50,kg,500
+Lidl,6789012340006,Chicken,Meat,34.75,kg,20
+Lidl,7890123450007,Beef,Meat,34.00,kg,15
+Lidl,8901234560008,Pork,Meat,27.50,kg,25
+Lidl,9012345670009,Lamb,Meat,54.00,kg,10
+Lidl,1234567890010,Sausage,Meat,14.50,kg,30
+Lidl,2345678900011,Milk,Dairy,6.00,liter,50
+Lidl,3456789010012,Yogurt,Dairy,9.50,pack,40
+Lidl,4567890120013,Cheese,Dairy,17.75,kg,15
+Lidl,5678901230014,Butter,Dairy,14.00,pack,25
+Lidl,6789012340015,Ice Cream,Dairy,21.50,liter,15
+Lidl,7890123450016,Spaghetti,Pasta,4.50,kg,1000
+Lidl,8901234560017,Rice,Grocery,11.50,kg,800
+Lidl,9012345670018,Couscous,Grocery,8.25,kg,500
+Lidl,1234567890019,Quinoa,Grocery,20.00,kg,300
+Lidl,2345678900020,Penne Pasta,Grocery,6.00,kg,1200
+Lidl,3456789010021,Orange Juice,Beverages,12.00,liter,25
+Lidl,4567890120022,Coffee,Beverages,34.00,kg,30
+Lidl,5678901230023,Green Tea,Beverages,15.00,pack,40
+Lidl,6789012340024,Soda,Beverages,6.25,liter,50
+Lidl,7890123450025,Mineral Water,Beverages,3.75,liter,100
+Lidl,8901234560026,Towel,Household,10.25,pack,60
+Lidl,9012345670027,Flashlight,Electronics,14.50,unit,15
+Lidl,1234567890028,Candle,Household,5.25,pack,80
+Lidl,2345678900029,Sunscreen,Personal Care,17.75,unit,20
+Lidl,3456789010030,Notebook,Stationery,21.50,unit,30
