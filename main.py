@@ -17,7 +17,7 @@ def get_product_details(existing_prices, product_name):
     }
 
 # Replace 'ee786ff7897e4963ea57b1dc0f2bd73724bf9190' with the actual commit hash or branch name
-github_csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/ecc76a6414469e709060051de46e3304042c065d/database.csv'
+github_csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/ecc76a6414469e709060051de46e3304042c065dQuinoa/database.csv'
 
 # Read existing prices from the CSV file
 existing_prices_df = pd.read_csv(github_csv_url)
