@@ -1,4 +1,4 @@
-Supermarket Name,EAN,Product Name,Category,Price (DKK),Quantity,Stock
+Supermarket,EAN,Product Name,Category,Price (DKK),Quantity,Stock
 Rema 1000,1234567890001,Apple,Fruits,10.50,kg,1500
 Rema 1000,2345678900002,Carrot,Vegetables,4.75,kg,1200
 Rema 1000,3456789010003,Banana,Fruits,8.25,kg,1000
