@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
+    </head>
+    <body>
+        <h1 class="title"> Grocery List</h1>
+        <ul>
+            {% for item in chosenItems %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    
+        <h2 class="title">Supermarket Prices</h2>
+        <ul style="text-align: center;">
+            {% for product, price in supermarket_prices.items() %}
+                <li>{{ product }}: {{ price }} DKK</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
