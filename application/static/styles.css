@@ -9,7 +9,7 @@ p {
 }
 
 .title {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 50px;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -50,20 +50,16 @@ p {
     color: #ffffff;
     background-color: #FF5A5F;
     border-radius: 25px;
+    margin-left: 10px;
 }
 
 .header {
-    width: 85%;
+    width: 100%;
     text-align: center;
-    padding: 20px 100px;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
-}
-
-.profile-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    box-sizing: border-box;
 }
 
 .profile-button {
@@ -79,4 +75,12 @@ p {
     color: #ffffff;
     font-family: 'Roboto Condensed';
     font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.logo {
+   width: auto;
+   height: 40px;
+   text-align: center;
 }
