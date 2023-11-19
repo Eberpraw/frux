@@ -42,12 +42,19 @@ def grocery_list():
 def get_product_details_rema1000(chosen_items, supermarket='Rema 1000', csv_url='https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b263028317fce51a1db34af7dc5/database.csv'):
     df = pd.read_csv(csv_url)
 
+    # Convert 'Price (DKK)' column to numeric
+    df['Price (DKK)'] = pd.to_numeric(df['Price (DKK)'], errors='coerce')
+
     # Filter rows based on supermarket and chosen items
     filtered_df = df[(df['Supermarket'] == supermarket) & (df['Product Name'].isin(chosen_items))]
 
     # Create a dictionary of product names and prices
     prices = dict(zip(filtered_df['Product Name'], filtered_df['Price (DKK)']))
 
-    print("Supermarket Prices:", prices)
+    # Calculate the sum of prices
+    total_price = sum(prices.values())
+
+    # Add total_price to the prices dictionary
+    prices['Total'] = total_price
 
     return prices

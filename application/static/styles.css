@@ -53,11 +53,30 @@ p {
 }
 
 .header {
-
+    width: 85%;
+    text-align: center;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile-image {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.profile-button {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
 }

@@ -7,8 +7,8 @@
     </head>
     <body>
         <h1 class="title"> Grocery List</h1>
-        <h2 class="title">Supermarket Prices</h2>
         <ul style="text-align: center;">
+            <h2 class="title">Rema 1000</h2>
             {% for product, price in supermarket_prices.items() %}
                 <li>{{ product }}: {{ price }} DKK</li>
             {% endfor %}
