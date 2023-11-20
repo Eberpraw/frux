@@ -6,12 +6,24 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
     </head>
     <body>
-        <h1 class="title"> Grocery List</h1>
-        <ul style="text-align: center;">
-            <h2 class="title">Rema 1000</h2>
-            {% for product, price in supermarket_prices.items() %}
-                <li>{{ product }}: {{ price }} DKK</li>
+        <h2>Rema 1000</h2>
+        <ul>
+            {% for product, price in supermarket_prices_rema1000.items() %}
+                {% if product != 'Total' %}
+                    <li>{{ product }}: {{ price }} DKK</li>
+                {% endif %}
             {% endfor %}
         </ul>
+        <p class="total-price">Total: {{ supermarket_prices_rema1000['Total'] }} DKK</p>
+    
+        <h2>Føtex</h2>
+        <ul>
+            {% for product, price in supermarket_prices_rema1000.items() %}
+                {% if product != 'Total' %}
+                    <li>{{ product }}: {{ price }} DKK</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <p class="total-price">Total: {{ supermarket_prices_rema1000['Total'] }} DKK</p>
     </body>
 </html>

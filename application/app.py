@@ -3,7 +3,11 @@ import pandas as pd
 
 app = Flask(__name__)
 
+# Global variable that holds the items the user have chosen
 chosenItems = []
+
+# Global variable for database all stores needs to access 
+csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b263028317fce51a1db34af7dc5/database.csv'
 
 @app.route("/")
 def index():
@@ -33,17 +37,17 @@ def items():
 @app.route("/grocery-list")
 def grocery_list():
     # Call the function to get prices based on chosen items
-    supermarket_prices = get_product_details_rema1000(chosenItems)
+    supermarket_prices_rema1000 = get_product_details_rema1000(chosenItems)
 
     # split up items to a list (separated by comma) 
     result = [item.strip() for sublist in chosenItems for item in sublist.split(',')]
 
     # Render the template with the prices
-    return render_template("grocery-list.html", supermarket_prices=supermarket_prices, chosenItems=result)
+    return render_template("grocery-list.html", supermarket_prices_rema1000=supermarket_prices_rema1000, chosenItems=result)
 
 
 # Get the products from Rema 1000 in database.csv
-def get_product_details_rema1000(chosen_items, supermarket='Rema 1000', csv_url='https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b263028317fce51a1db34af7dc5/database.csv'):
+def get_product_details_rema1000(chosen_items, supermarket='Rema 1000'):
     df = pd.read_csv(csv_url)
 
     # Convert 'Price (DKK)' column to numeric
