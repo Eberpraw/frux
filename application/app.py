@@ -9,6 +9,10 @@ chosenItems = []
 def index():
     return render_template("index.html")
 
+@app.route("/profile/emilie")
+def profile():
+    return render_template("profile/emilie.html")
+
 @app.route("/items", methods=["GET", "POST"])
 def items():
     if request.method == "POST":

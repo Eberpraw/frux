@@ -9,7 +9,7 @@ p {
 }
 
 .title {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 50px;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -17,7 +17,7 @@ p {
     font-weight: 900;
     font-size: 85px;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    line-height: 90%;
+    line-height: 95%;
 }
 
 .input {
@@ -25,7 +25,7 @@ p {
     font-family: sans-serif;
     font-size: 18px;
     padding-left: 20px;
-    border: solid 1px #ccc;
+    border: solid 5px #fafafa;
     border-radius: 25px;
     width: 400px;
     height: 50px;
@@ -62,12 +62,9 @@ p {
     box-sizing: border-box;
 }
 
-.profile-button {
-    font-size: 18px;
-    color: #ffffff;
-    font-family: 'Roboto Condensed';
-    font-weight: 600;
-    background-color: rgba(0,0,0,0.0);
+.navbar {
+    display: flex;
+    align-items: center;
 }
 
 .navbar a {
@@ -83,4 +80,10 @@ p {
    width: auto;
    height: 40px;
    text-align: center;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
 }
