@@ -1,14 +1,18 @@
 from flask import Flask, render_template, request, abort, redirect
+
+# Library to read CSV datamase
 import pandas as pd
 
+# Initializing a Flask web application
 app = Flask(__name__)
 
-# Global variable that holds the items the user have chosen
+# Global variable that holds a list of items the user have chosen
 chosenItems = []
 
-# Global variable for database all stores needs to access 
+# Global variable for database grocery products 
 csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b263028317fce51a1db34af7dc5/database.csv'
 
+# Flask syntax for creating our homepage and loading index.html 
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -24,7 +28,7 @@ def items():
         if not item_input:
             return abort(400, "No item provided")
         
-        # Process the input items as needed
+        # Process the input items as needed (might need to delete)
         items = [item.strip() for item in item_input.split(',')]
         
         # Add each item to chosenItems
