@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
+    </head>
+    <body>
+        <h2>Rema 1000</h2>
+        <ul>
+            {% for product, price in supermarket_prices_rema1000.items() %}
+                {% if product != 'Total' %}
+                    <li>{{ product }}: {{ price }} DKK</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <p class="total-price">Total: {{ supermarket_prices_rema1000['Total'] }} DKK</p>
+    
+        <h2>Føtex</h2>
+        <ul>
+            {% for product, price in supermarket_prices_rema1000.items() %}
+                {% if product != 'Total' %}
+                    <li>{{ product }}: {{ price }} DKK</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <p class="total-price">Total: {{ supermarket_prices_rema1000['Total'] }} DKK</p>
+    </body>
+</html>

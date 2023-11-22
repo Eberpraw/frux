@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flux | Grocery Shopping</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body {
+            background-image: url("/static/images/background.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+<body>
+
+    <header class="header">
+        <a href="http://127.0.0.1:5000/"><img src="/static/images/logo.png" alt="logo" class="logo"></a>
+
+        <nav class="navbar">
+            <a href="#">How it Works</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="http://127.0.0.1:5000/profile/emilie"><img src="/static/images/emilie.jpg" alt="Profile Image" class="profile-image"></a>
+        </nav>
+
+    </header>
+
+    <h1 class="title">Where Savings<br>Meet Convenience</h1>
+    <form action="/items" method="post" style="text-align: center;">
+        <input class="input" name="item" type="text" placeholder="Separate items by comma">
+        <input class="button" type="submit" value="Search">
+    </form>
+
+</body>
+</html>
