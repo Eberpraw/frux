@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort, redirect, session
+from flask import Flask, render_template, request, abort, session
 
 # Library to read CSV datamase
 import pandas as pd
@@ -38,10 +38,13 @@ def grocery_list():
         item_input = request.form.get("item")
         # if no items are provided in form we abort
         if not item_input:
-            return abort(400, "No item provided")
+            return abort(400, "No items provided")
 
         # We create a list of strings where we strip spaces and separate items by a comma
-        items = [item.strip() for item in item_input.split(',')]
+        items = []
+        for item in item_input.split(','):
+            items.append(item.strip())
+
 
         # Use a set to store unique items to prevent duplicates
         unique_items = set(items)
@@ -52,8 +55,12 @@ def grocery_list():
     # Get favorite stores from the session
     favorite_stores = session.get('favorite_stores', [])
 
-    # split up items to a list (separated by comma) #list comp
-    result = [item.strip() for sublist in chosenItems for item in sublist.split(',')]
+    # for loop to split up items to a list (separated by comma) # not a list comp anymore
+    result = []
+    for sublist in chosenItems:
+        for item in sublist.split(','):
+            result.append(item.strip())
+
 
     # Call the function to get prices based on chosen items
     supermarket_prices_by_store = get_product_details_by_store(chosenItems, favorite_stores)
