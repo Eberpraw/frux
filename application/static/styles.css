@@ -67,6 +67,11 @@ p {
     align-items: center;
 }
 
+.navbarDark {
+    display: flex;
+    align-items: center;
+}
+
 .navbar a {
     font-size: 18px;
     color: #ffffff;
@@ -75,6 +80,16 @@ p {
     margin-left: 40px;
     text-decoration: none;
 }
+
+.navbarDark a {
+    font-size: 18px;
+    color: #404040;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
 
 .logo {
    width: auto;
@@ -89,5 +104,18 @@ p {
 }
 
 .total-price {
-    
+
+}
+
+.logo-size {
+    height: 40px;
+}
+
+.checkbox-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+.store_logo {
+
 }
