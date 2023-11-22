@@ -3,9 +3,19 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-family: 'Roboto Condensed';
+    font-weight: 900;
+}
+
 p {
     font-family: sans-serif;
     font-size: 16px;
+}
+
+ul {
+    font-family: sans-serif;
+    font-size: 16px;   
 }
 
 .title {
@@ -109,6 +119,8 @@ p {
 
 .logo-size {
     height: 40px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .checkbox-container {
