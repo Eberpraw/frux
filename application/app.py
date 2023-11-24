@@ -19,7 +19,10 @@ csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b2630283
 # Flask syntax for creating our homepage and loading index.html
 @app.route("/")
 def index():
-    return render_template("index.html")
+    # Load checkbox data when the app launches
+    favorite_stores = session.get('favorite_stores', [])
+    print("Favorite stores: ", favorite_stores)
+    return render_template("index.html", favorite_stores=favorite_stores)
 
 @app.route("/profile/emilie", methods=["GET", "POST"])
 def profile():
@@ -52,7 +55,7 @@ def grocery_list():
         # Add each item to chosenItems global variable
         chosenItems.extend(unique_items)
 
-    # Get favorite stores from the session
+    # Get favorite stores from the last session
     favorite_stores = session.get('favorite_stores', [])
 
     # for loop to split up items to a list (separated by comma) # not a list comp anymore
@@ -65,10 +68,14 @@ def grocery_list():
     # Call the function to get prices based on chosen items
     supermarket_prices_by_store = get_product_details_by_store(chosenItems, favorite_stores)
 
-    print("Supermarket Prices by Store:", supermarket_prices_by_store)
+    # Call the function that sorts stores by prices
+    sorted_stores = bubble_sort_stores(supermarket_prices_by_store)
+
+    print("Prices: ", supermarket_prices_by_store)
+    print("Sorted stores: ", sorted_stores)
 
     # Render the template with the prices
-    return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, chosenItems=result)
+    return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, chosenItems=result)
 
 
 # Get the products from Rema 1000 in database.csv
@@ -111,4 +118,17 @@ def get_product_details_by_store(chosenItems_placeholder, favorite_stores):
         supermarket_prices_by_store[store] = prices
 
     return supermarket_prices_by_store
+
+def bubble_sort_stores(prices_by_store):
+    # Making a list of the searched stores
+    stores = list(prices_by_store)
+    n = len(stores)
+
+    # Performing a Bubble sort
+    for i in range(n - 1):
+        for j in range(0, n - i - 1):
+            if prices_by_store[stores[j]]['Total'] > prices_by_store[stores[j + 1]]['Total']:
+                stores[j], stores[j + 1] = stores[j + 1], stores[j]
+
+    return stores    
 
