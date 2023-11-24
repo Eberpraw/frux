@@ -21,7 +21,6 @@ csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b2630283
 def index():
     # Load checkbox data when the app launches
     favorite_stores = session.get('favorite_stores', [])
-    print("Favorite stores: ", favorite_stores)
     return render_template("index.html", favorite_stores=favorite_stores)
 
 @app.route("/profile/emilie", methods=["GET", "POST"])
