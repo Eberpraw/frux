@@ -16,6 +16,7 @@
             background-size: cover;
         }
     </style>
+
 <body>
 
     <header class="header">
@@ -31,11 +32,16 @@
     </header>
 
     <main>
-        <h1 class="title">Where Savings<br>Meet Convenience</h1>
-        <form action="/grocery-list" method="post" style="text-align: center;">
-            <input class="input" name="item" type="text" placeholder="Separate items by comma">
-            <input class="button" type="submit" value="Search">
-        </form>
+        <div>
+            <h1 class="title">Where Savings<br>Meet Convenience</h1>
+        </div>
+        
+        <div>
+            <form action="/grocery-list" method="post" style="text-align: center; padding-bottom: 60px;"">
+                <input class="input" name="item" type="text" placeholder="Separate items by comma">
+                <input class="button" type="submit" value="Search">
+            </form>
+        </div>
     </main>
 
 </body>
