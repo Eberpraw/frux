@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
     </head>
     <body>
+
         <header class="header" style="background-color: #fdfdfd;">
             <a href="http://127.0.0.1:5000/"><img src="/static/images/logo_dark.png" alt="logo" class="logo"></a>
     
@@ -16,7 +17,8 @@
                 <a href="#">Contact</a>
                 <a href="http://127.0.0.1:5000/profile/emilie"><img src="/static/images/emilie.jpg" alt="Profile Image" class="profile-image"></a>
             </nav>
-    </header>
+        </header>
+
     <form class="boxed-form" action="/profile/emilie" method="post">
         <div>
             <h2>Favorite Stores</h2>
@@ -71,43 +73,47 @@
         // Function to load checkbox state from local storage
         function loadCheckboxState(checkboxId) {
             const checkbox = document.getElementById(checkboxId);
-            checkbox.checked = localStorage.getItem(checkboxId) === 'true'; 
+            if (checkbox) {
+                const storedValue = localStorage.getItem(checkboxId);
+                checkbox.checked = storedValue === 'true';
+            } else {
+                console.error(`Checkbox with ID ${checkboxId} not found.`);
+            }
         }
             
         // Function to save checkbox state to local storage
         function saveCheckboxState(checkboxId, isChecked) {
             localStorage.setItem(checkboxId, isChecked);
         }
-
+    
         // Load the state of each checkbox on page load
         loadCheckboxState('føtex');
         loadCheckboxState('rema1000');
+        loadCheckboxState('coop365');
         loadCheckboxState('netto');
         loadCheckboxState('lidl');
-        loadCheckboxState('coop365');
-
+    
         // Add change event listeners to each checkbox
         document.getElementById('føtex').addEventListener('change', function() {
             saveCheckboxState('føtex', this.checked);
         }); 
-
+    
         document.getElementById('rema1000').addEventListener('change', function() {
             saveCheckboxState('rema1000', this.checked);
         }); 
-
-        document.getElementById('netto').addEventListener('change', function() {
-            saveCheckboxState('netto', this.checked);
-        }); 
-
-        document.getElementById('lidl').addEventListener('change', function() {
-            saveCheckboxState('lidl', this.checked);
-        }); 
-
+    
         document.getElementById('coop365').addEventListener('change', function() {
             saveCheckboxState('coop365', this.checked);
         }); 
-
+    
+        document.getElementById('netto').addEventListener('change', function() {
+            saveCheckboxState('netto', this.checked);
+        }); 
+    
+        document.getElementById('lidl').addEventListener('change', function() {
+            saveCheckboxState('lidl', this.checked);
+        }); 
     </script>
-
+    
     </body>
 </html>
