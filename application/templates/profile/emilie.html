@@ -2,6 +2,7 @@
 
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
     </head>
@@ -36,7 +37,7 @@
             </label>
         </div>
 
-        </div>
+        <div>
             <label>
                 <!-- Coop365 -->
                 <input class="checkbox-container" type="checkbox" name="store[]" id="coop365" value="Coop 365" checked>
@@ -52,12 +53,13 @@
             </label>
         </div>
 
+        <div>
         <label>
             <!-- Lidl -->
             <input class="checkbox-container" type="checkbox" name="store[]" id="lidl" value="Lidl" checked>
             <img class="logo-size" style="border-radius: 15px;" src="/static/images/Lidl_logo.png" alt="Lidl">
         </label>
-
+        </div>
 
         <div style="padding-top: 30px;">
             <button class="button" type="submit">Save Favorite Stores</button>
