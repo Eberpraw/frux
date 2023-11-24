@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
     </head>
     <body>
-        <header class="header">
+        <header class="header" style="background-color: #fdfdfd;">
             <a href="http://127.0.0.1:5000/"><img src="/static/images/logo_dark.png" alt="logo" class="logo"></a>
     
             <nav class="navbarDark">
@@ -16,38 +16,53 @@
                 <a href="http://127.0.0.1:5000/profile/emilie"><img src="/static/images/emilie.jpg" alt="Profile Image" class="profile-image"></a>
             </nav>
     </header>
-    <form action="/profile/emilie" method="post">
+    <form class="boxed-form" action="/profile/emilie" method="post">
+        <div>
+            <h2>Favorite Stores</h2>
+        </div>
+        <div>
+            <label>
+                <!-- Føtex -->
+                <input class="checkbox-container" type="checkbox" name="store[]" id="føtex" value="Føtex" checked>
+                <img class="logo-size" src="/static/images/føtex_logo.png" alt="Føtex">
+            </label>
+        </div>
 
-        <label>
-            <!-- Føtex -->
-            <input class="checkbox-container" type="checkbox" name="store[]" id="føtex" value="Føtex" checked>
-            <img class="logo-size" src="/static/images/føtex_logo.png" alt="Føtex">
-        </label>
+        <div>
+            <label>
+                <!-- Rema 1000 -->
+                <input class="checkbox-container" type="checkbox" name="store[]" id="rema1000" value="Rema 1000" checked>
+                <img class="logo-size" src="/static/images/Rema_logo.png" alt="Rema 1000">
+            </label>
+        </div>
 
-        <label>
-            <!-- Rema 1000 -->
-            <input class="checkbox-container" type="checkbox" name="store[]" id="rema1000" value="Rema 1000" checked>
-            <img class="logo-size" src="/static/images/Rema_logo.png" alt="Rema 1000">
-        </label>
+        </div>
+            <label>
+                <!-- Coop365 -->
+                <input class="checkbox-container" type="checkbox" name="store[]" id="coop365" value="Coop 365" checked>
+                <img class="logo-size" style="border-radius: 15px;" src="/static/images/Coop_logo.png" alt="Coop 365">
+            </label>
+        </div>
 
-        <label>
-            <!-- Netto -->
-            <input class="checkbox-container" type="checkbox" name="store[]" id="netto" value="Netto" checked>
-            <img class="logo-size" src="/static/images/Netto_logo.png" alt="netto">
-        </label>
+        <div>
+            <label>
+                <!-- Netto -->
+                <input class="checkbox-container" type="checkbox" name="store[]" id="netto" value="Netto" checked>
+                <img class="logo-size" style="border-radius: 15px;" src="/static/images/Netto_logo.png" alt="netto">
+            </label>
+        </div>
 
         <label>
             <!-- Lidl -->
             <input class="checkbox-container" type="checkbox" name="store[]" id="lidl" value="Lidl" checked>
-            <img class="logo-size" src="/static/images/Lidl_logo.png" alt="Lidl">
+            <img class="logo-size" style="border-radius: 15px;" src="/static/images/Lidl_logo.png" alt="Lidl">
         </label>
 
-        <label>
-            <!-- Coop365 -->
-            <input class="checkbox-container" type="checkbox" name="store[]" id="coop365" value="Coop 365" checked>
-            <img class="logo-size" src="/static/images/Coop_logo.png" alt="Coop 365">
-        </label>
-        <button style="text-align: center; margin-top: 25px;" class="button" type="submit">Save Favorite Stores</button>
+
+        <div style="padding-top: 30px;">
+            <button class="button" type="submit">Save Favorite Stores</button>
+        </div>
+
     </form>
 
     <script>
