@@ -68,11 +68,12 @@ def grocery_list():
     # Call the function that sorts stores by prices
     sorted_stores = bubble_sort_stores(supermarket_prices_by_store)
 
+
     print("Prices: ", supermarket_prices_by_store)
     print("Sorted stores: ", sorted_stores)
 
     # Render the template with the prices
-    return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, chosenItems=result)
+    return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, store_logos=store_logos, chosenItems=result)
 
 
 # Get the products from Rema 1000 in database.csv
@@ -129,3 +130,10 @@ def bubble_sort_stores(prices_by_store):
 
     return stores    
 
+store_logos = {
+    'Rema 1000': '/static/images/Rema_logo.png',
+    'Netto': '/static/images/Netto_logo.png',
+    'Føtex': '/static/images/Føtex_logo.png',
+    'Coop 365': '/static/images/Coop_logo.png',
+    'Lidl': '/static/images/Lidl_logo.png',
+}
