@@ -4,6 +4,24 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
 </head>
+
+<header class="header" style="background-color: #fdfdfd;">
+    <a href="http://127.0.0.1:5000/"><img src="/static/images/logo_dark.png" alt="logo" class="logo"></a>
+
+    <nav class="navbarDark">
+        <a href="#">How it Works</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="http://127.0.0.1:5000/profile/emilie"><img src="/static/images/emilie.jpg" alt="Profile Image" class="profile-image"></a>
+    </nav>
+</header>
+
+<main>
+    <div style="text-align: center;">
+        <h2 class="Best_option_header"> Your Cheapest<br>Option is {{ sorted_stores[0] }}</h2>
+    </div>
+</main>
+
 <body>
     {% for store in sorted_stores %}
         <h2>{{ store }}</h2>

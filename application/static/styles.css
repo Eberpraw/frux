@@ -21,7 +21,7 @@ ul {
 }
 
 .title {
-    padding-top: 100px;
+    padding-top: 80px;
     margin-bottom: 50px;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -63,6 +63,15 @@ ul {
     background-color: #FF5A5F;
     border-radius: 25px;
     margin-left: 10px;
+
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 .header {
@@ -115,20 +124,26 @@ ul {
     border-radius: 50px;
 }
 
-.total-price {
-
-}
-
 .logo-size {
     height: 30px;
     display: inline-block;
     vertical-align: middle;
-    padding: 10px
+    padding: 10px;
+
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.logo-size:hover {
+    transform: scale(1.05);
 }
 
 .checkbox-container {
     display: inline-block;
     vertical-align: middle;
+
 }
 
 .boxed-form {
@@ -140,4 +155,11 @@ ul {
     border-radius: 25px;
     padding: 40px;
     box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.10);
+}
+
+.Best_option_header {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 70px;
+    line-height: 100%;
 }
