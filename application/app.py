@@ -19,9 +19,7 @@ csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b2630283
 # Flask syntax for creating our homepage and loading index.html
 @app.route("/")
 def index():
-    # Load checkbox data when the app launches
-    favorite_stores = session.get('favorite_stores', [])
-    return render_template("index.html", favorite_stores=favorite_stores)
+    return render_template("index.html")
 
 @app.route("/profile/emilie", methods=["GET", "POST"])
 def profile():
