@@ -41,6 +41,9 @@ ul {
     border-radius: 25px;
     width: 400px;
     height: 50px;
+    background: #ffffff url('/static/images/magnifier.png') 10px center no-repeat;
+    background-size: 20px; /* Adjust the size of the image */
+    padding-left: 40px;
 }
 .input::placeholder {
     color: #c0c0c0;
@@ -100,6 +103,15 @@ ul {
     font-weight: 600;
     margin-left: 40px;
     text-decoration: none;
+
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.navbar a:hover {
+    transform: scale(1.05);
 }
 
 .navbarDark a {
@@ -109,6 +121,15 @@ ul {
     font-weight: 600;
     margin-left: 40px;
     text-decoration: none;
+
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.navbarDark a:hover {
+    transform: scale(1.05);
 }
 
 
