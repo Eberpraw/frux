@@ -18,13 +18,8 @@ csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b2630283
 
 # Flask syntax for creating our homepage and loading index.html
 @app.route("/")
-def index():
+def index(): 
     return render_template("index.html")
-
-#We create the subpage How it works
-@app.route("/how-it-works")
-def How_it_works():
-    return render_template("How_it_works.html")
 
 @app.route("/profile/emilie", methods=["GET", "POST"])
 def profile():
