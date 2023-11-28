@@ -33,7 +33,7 @@ def profile():
 #We create the subpage How it works
 @app.route("/how-it-works")
 def how_it_works():
-    return render_template("how-it-works.html")
+        return render_template("how-it-works.html")
 
 # We create the grocery lists using GET & POST methods
 @app.route("/grocery-list", methods=["GET", "POST"])
