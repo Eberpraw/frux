@@ -136,6 +136,9 @@ ul {
     Cursor: pointer;
 }
 
+.navbarDark a.active {
+    color: #ff454b;
+  }
 
 .logo {
    width: auto;
