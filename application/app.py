@@ -6,8 +6,6 @@ import pandas as pd
 # Library for secret key generation (for cache)
 import os
 
-# SLET
-
 # Initializing a Flask web application
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
