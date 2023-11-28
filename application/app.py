@@ -21,10 +21,6 @@ csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b2630283
 def index(): 
     return render_template("index.html")
 
-@app.route("/how-it-works")
-def index(): 
-    return render_template("how-it-works.html")
-
 @app.route("/profile/emilie", methods=["GET", "POST"])
 def profile():
     if request.method == "POST":
@@ -34,14 +30,11 @@ def profile():
     favorite_stores = session.get('favorite_stores', [])
     return render_template("profile/emilie.html", favorite_stores=favorite_stores)
 
-<<<<<<< HEAD
 #We create the subpage How it works
 @app.route("/how-it-works")
 def how_it_works():
         return render_template("how-it-works.html")
 
-=======
->>>>>>> e28b0f4f83e8eb340b67c6d96b1fd010ae3f1e73
 # We create the grocery lists using GET & POST methods
 @app.route("/grocery-list", methods=["GET", "POST"])
 def grocery_list():
