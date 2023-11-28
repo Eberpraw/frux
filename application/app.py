@@ -22,7 +22,7 @@ def index():
     return render_template("index.html")
 
 #We create the subpage How it works
-@app.route("/How_it_works")
+@app.route("/how-it-works")
 def How_it_works():
     return render_template("How_it_works.html")
 
