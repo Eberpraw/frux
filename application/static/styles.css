@@ -1,6 +1,7 @@
 h1 {
     font-family: 'Roboto Condensed';
     font-weight: 900;
+    color:#404040;
 }
 
 h2 {
@@ -197,6 +198,6 @@ ul {
     border-radius: 10px;
 }
 
-.lol {
-    
+.how-it-works-title {
+    text-align:center;
 }
