@@ -75,6 +75,7 @@ ul {
 
 .button:hover {
     transform: scale(1.1);
+    Cursor: pointer;
 }
 
 .header {
@@ -112,6 +113,7 @@ ul {
 
 .navbar a:hover {
     transform: scale(1.05);
+    Cursor: pointer;
 }
 
 .navbarDark a {
@@ -130,6 +132,7 @@ ul {
 
 .navbarDark a:hover {
     transform: scale(1.05);
+    Cursor: pointer;
 }
 
 
@@ -159,6 +162,7 @@ ul {
 
 .logo-size:hover {
     transform: scale(1.05);
+    Cursor: pointer;
 }
 
 .checkbox-container {
