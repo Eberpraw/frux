@@ -18,7 +18,7 @@ csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b2630283
 
 # Flask syntax for creating our homepage and loading index.html
 @app.route("/")
-def index():
+def index(): 
     return render_template("index.html")
 
 #We create the subpage How it works
@@ -34,6 +34,11 @@ def profile():
 
     favorite_stores = session.get('favorite_stores', [])
     return render_template("profile/emilie.html", favorite_stores=favorite_stores)
+
+#We create the subpage How it works
+@app.route("/how-it-works")
+def how_it_works():
+        return render_template("how-it-works.html")
 
 # We create the grocery lists using GET & POST methods
 @app.route("/grocery-list", methods=["GET", "POST"])
