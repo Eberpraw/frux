@@ -21,11 +21,6 @@ csv_url = 'https://raw.githubusercontent.com/Eberpraw/frux/5b6fcd790d597b2630283
 def index(): 
     return render_template("index.html")
 
-#We create the subpage How it works
-@app.route("/How_it_works")
-def How_it_works():
-    return render_template("How_it_works.html")
-
 @app.route("/profile/emilie", methods=["GET", "POST"])
 def profile():
     if request.method == "POST":
