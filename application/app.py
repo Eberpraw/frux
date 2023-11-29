@@ -24,7 +24,11 @@ def index():
 #We create the subpage How it works
 @app.route("/how-it-works")
 def How_it_works():
-    return render_template("How_it_works.html")
+    return render_template("how-it-works.html")
+
+@app.route("/contact")
+def Contact():
+    return render_template("contact.html")
 
 @app.route("/profile/emilie", methods=["GET", "POST"])
 def profile():
