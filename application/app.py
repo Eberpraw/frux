@@ -93,6 +93,7 @@ def get_product_details(chosenItems_placeholder, favorite_stores):
     # Convert 'Price (DKK)' column to numeric
     df['Price (DKK)'] = pd.to_numeric(df['Price (DKK)'])
 
+
     # Create a new variable with df variable, isin is a boolean that checks if chosenItem is in the database
     filtered_df = df[(df['Supermarket'].isin(favorite_stores)) & (df['Product Name'].isin(chosenItems_placeholder))]
 
@@ -117,9 +118,10 @@ def get_product_details_by_store(chosenItems_placeholder, favorite_stores):
     # Create a dictionary to hold prices for each store
     supermarket_prices_by_store = {store: {} for store in favorite_stores}
 
-    # Iterate through the stores and chosen items to fill in the prices
+    # Iterate through the stores and chosen items to fill in the prices, and convert the product names to lowercase for case-insensitive
     for store in favorite_stores:
-        filtered_df = df[(df['Supermarket'] == store) & (df['Product Name'].isin(chosenItems_placeholder))]
+        chosen_items_lower = [item.lower() for item in chosenItems_placeholder]
+        filtered_df = df[(df['Supermarket'] == store) & (df['Product Name'].str.lower().isin(chosen_items_lower))]
         prices = dict(zip(filtered_df['Product Name'], filtered_df['Price (DKK)']))
         total_price = sum(prices.values())
         prices['Total'] = total_price
