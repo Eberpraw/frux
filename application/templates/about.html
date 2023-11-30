@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    body {
+        background-image: url("/static/images/background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <a href="http://127.0.0.1:5000/"><img src="/static/images/logo.png" alt="logo" class="logo"> </a>
+
+    <nav class="navbar">
+        <a href="http://127.0.0.1:5000/how-it-works">How it Works</a>
+        <a href="http://127.0.0.1:5000/about">About</a>
+        <a href="http://127.0.0.1:5000/contact">Contact</a>
+        <a href="http://127.0.0.1:5000/profile/emilie"><img src="/static/images/emilie.jpg" Alt="Profile Image" Class="profile-image"></a>
+    </nav>
+    </header> 
+
+    <section class="about-section">
+        <div class="member">
+            <img src="/static/images/tanja.jpg" alt="Tanja" class="member-image">
+            <h2>Tanja</h2>
+            <ul class="members-description">
+                <li>Background in Communication and Dgital Media</li>
+                <li>Loves grocery shopping and visiting new suoermarkets</li>
+                <li>Cooks a lot of Asian-inspired-food, especially Indian and Thai</li>
+            </ul>
+        </div>
+
+        <div class="member">
+            <img src="/static/images/josephine.jpg" alt="Josephine" class="member-image">
+            <h2>Josephine</h2>
+            <ul class="members-description">
+                <li>Background in English</li>
+                <li>A bit of an impulsive shopper and loyal to Meny</li>
+                <li>She loves her leverpostej and white Monster</li>
+            </ul>
+        </div>
+
+        <div class="member">
+            <img src="/static/images/emilie1.jpg" alt="Emilie" class="member-image">
+            <h2>Emilie</h2>
+            <ul class="members-description">
+                <li>Background in Language and International Studies in English</li>
+                <li>She is great at meal planning</li>
+                <li>She likes Monster</li>
+            </ul>
+        </div>
+
+        <div class="member">
+            <img src="/static/images/aisho.jpg" alt="Aisho" class="member-image">
+            <h2>Aisho</h2>
+            <ul class="members-description">
+                <li>Background in Sociology</li>
+                <li>She finds it difficult to come up with ideas for dinner</li>
+                <li>She likes Red Bull Cactus</li>
+            </ul>
+        </div>
+
+        <div class="member">
+            <img src="/static/images/tobias.jpg" alt="Tobias" class="member-image">
+            <h2>Tobias</h2>
+            <ul class="members-description">
+                <li>Background in Multiplatform Storytelling and Production</li>
+                <li>The Protein King</li>
+                <li>He eats the same lunch everyday and only know chicken and eggs</li>
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

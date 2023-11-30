@@ -26,6 +26,10 @@ def index():
 def How_it_works():
     return render_template("how-it-works.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 @app.route("/contact")
 def Contact():
     return render_template ("contact.html")
