@@ -18,7 +18,15 @@ p {
 
 ul {
     font-family: sans-serif;
-    font-size: 16px;   
+    font-size: 24px;
+    color: #404040;  
+    list-style: none;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 .title {
@@ -207,33 +215,44 @@ ul {
 
 .bg-glist {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     width: 500px;
     border-radius: 25px;
     box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.10);
     overflow: hidden;
     padding: 40px;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto; 
 }
 
 .content-container {
     display: block;
+    text-align: left; 
+    grid-template-columns: 1fr;
+    width: 475px;
+}
+
+.total-container {
+    text-align: right;
+    margin-top: auto;
 }
 
 .total-price {
-    display: block;
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: underline;
 }
 
 .store-logo {
     height: 45px;
+    border-radius: 5px;
 }
 
 .product {
-    text-align: left;
+    float: left;
+    clear: left;
 }
 
 .price {
-    text-align: right;
+    float: right;
+    clear: right;
 }

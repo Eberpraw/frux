@@ -32,14 +32,16 @@
             <!-- Display Store Logos -->
             <img src="{{ store_logos[store] }}" class="store-logo" alt="logo">
             {% if supermarket_prices_by_store[store] %}
-                <ul style="list-style-type: none;">
+                <ul>
                     {% for product, price in supermarket_prices_by_store[store].items() %}
                         {% if product != 'Total' %}
-                        <li><span class="product">{{ product }}:</span> <span class="price">{{ price }} DKK</span></li>
+                        <li><span class="product">{{ product }}:</span><span class="price">{{ price }} DKK</span></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
-                <p class="total-price">Total: {{ supermarket_prices_by_store[store]['Total'] }} DKK</p>
+                <div class="total-container">
+                <p class="total-price">{{ supermarket_prices_by_store[store]['Total'] }} DKK</p>
+            </div>
             {% else %}
                 <p>No products for this store.</p>
             {% endif %}
