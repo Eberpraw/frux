@@ -235,14 +235,7 @@ ul li {
 }
 .how-it-works-title {
     text-align:center;
-
-}
-
-.contactMain {
-    margin-left: 20%;
-}
-
-    color: #404040;
+        color: #404040;
     line-height: 15px;
     font-size: 40px;
 }
@@ -329,6 +322,9 @@ ul li {
     display: flex;
   }
 
+
+  /* Styling for grocery list subpage */
+
 .bg-glist {
     background-color: #ffffff;
     display: flex;
@@ -371,4 +367,7 @@ ul li {
 .price {
     float: right;
     clear: right;
+}
+.contactMain {
+    margin-left: 20%;
 }

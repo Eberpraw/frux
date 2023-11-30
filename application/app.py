@@ -28,7 +28,7 @@ def How_it_works():
 
 @app.route("/contact")
 def Contact():
-    return render_template("contact.html"
+    return render_template ("contact.html")
 @app.route("/profile/emilie", methods=["GET", "POST"])
 def profile():
     if request.method == "POST":
