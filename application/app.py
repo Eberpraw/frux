@@ -33,6 +33,7 @@ def about():
 @app.route("/contact")
 def Contact():
     return render_template ("contact.html")
+
 @app.route("/profile/emilie", methods=["GET", "POST"])
 def profile():
     if request.method == "POST":
@@ -40,7 +41,11 @@ def profile():
         session['favorite_stores'] = favorite_stores
 
     favorite_stores = session.get('favorite_stores', [])
-    return render_template("profile/emilie.html", favorite_stores=favorite_stores)
+
+     # Retrieve and display all different iterations of items from the session
+    items_list_history = session.get('items_list', [])
+
+    return render_template("profile/emilie.html", favorite_stores=favorite_stores, items_list_history=items_list_history)
 
 # We create the grocery lists using GET & POST methods
 @app.route("/grocery-list", methods=["GET", "POST"])
@@ -52,7 +57,7 @@ def grocery_list():
         if not item_input:
             return abort(400, "No items provided")
 
-        # We create a list of strings where we strip spaces and separate items by a comma
+        # We create a list of string where we strip spaces and separate items by a comma
         items = []
         for item in item_input.split(','):
             items.append(item.strip())
@@ -63,6 +68,11 @@ def grocery_list():
 
         # Add each item to chosenItems global variable
         chosenItems.extend(unique_items)
+
+        # Save the current items list to the session
+        current_items_list = session.get('items_list', [])
+        current_items_list.append(list(unique_items))
+        session['items_list'] = current_items_list
 
     # Get favorite stores from the last session
     favorite_stores = session.get('favorite_stores', [])
@@ -80,15 +90,14 @@ def grocery_list():
     # Call the function that sorts stores by prices
     sorted_stores = bubble_sort_stores(supermarket_prices_by_store)
 
-
-    print("Prices: ", supermarket_prices_by_store)
-    print("Sorted stores: ", sorted_stores)
+    #Clears variable for next search
+    reset_chosenItems(chosenItems)
 
     # Render the template with the prices
     return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, store_logos=store_logos, chosenItems=result)
 
 
-# Get the products from Rema 1000 in database.csv
+# Get the products from stores in database.csv
 def get_product_details(chosenItems_placeholder, favorite_stores):
     df = pd.read_csv(csv_url)
 
@@ -151,3 +160,7 @@ store_logos = {
     'Coop 365': '/static/images/Coop_logo.png',
     'Lidl': '/static/images/Lidl_logo.png',
 }
+
+# Function that clears variable
+def reset_chosenItems(chosenItems):
+    chosenItems.clear() 

@@ -20,6 +20,21 @@
             </nav>
         </header>
 
+        <div>
+            <h2>Grocery List History</h2>
+    <ul>
+        {% for items_list in items_list_history %}
+            <li class="grocery_list_bg">
+                <ul>
+                    {% for item in items_list %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+        </div>
+
     <form class="boxed-form" action="/profile/emilie" method="post">
         <div>
             <h2>Favorite Stores</h2>
