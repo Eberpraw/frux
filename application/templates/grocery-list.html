@@ -35,20 +35,25 @@
                 <ul>
                     {% for product, price in supermarket_prices_by_store[store].items() %}
                         {% if product != 'Total' %}
-                        <li><span class="product">{{ product }}:</span><span class="price">{{ price }} DKK</span></li>
+                            <li class="underline-list-item "><span class="product">{{ product }}:</span><span class="price">{{ price }} DKK</span></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
-                <div class="total-container">
-                <p class="total-price">{{ supermarket_prices_by_store[store]['Total'] }} DKK</p>
-            </div>
             {% else %}
                 <p>No products for this store.</p>
             {% endif %}
+            <div class="total-container">
+                <p class="total-price">{{ supermarket_prices_by_store[store] ['Total'] }} DKK</p>
+            </div>
         </div>
     </div>
     {% endfor %}
 </body>
 
+<style>
+    .underline-list-item {
+      text-decoration: underline;
+    }
+  </style>
 
 </html>

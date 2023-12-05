@@ -20,16 +20,18 @@ ul {
     color: #404040;  
     list-style: none;
     font-weight: lighter;
-    line-height: 2;
+    line-height: 2.3;
 }
 
 ul li {
     margin-bottom: 10px;
+    margin-top: 30px;
+    text-decoration: underline;
 }
 
 .title {
-    padding-top: 70px;
-    margin-bottom: 50px;
+    padding-top: 5%;
+    margin-bottom: 2.6%;
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: 'Roboto Condensed';
@@ -193,10 +195,11 @@ ul li {
 }
 
 .Best_option_header {
-    padding-top: 60px;
+    padding-top: 40px;
     text-align: center;
     font-size: 70px;
     line-height: 110%;
+    padding-bottom: 20px;
 }
 
 .in-title-logo {
@@ -337,7 +340,7 @@ ul li {
 }
 
 .content-container {
-    display: block;
+    display: grid;
     text-align: left; 
     grid-template-columns: 1fr;
     width: 475px;
@@ -350,13 +353,16 @@ ul li {
 
 .total-price {
     font-size: 30px;
-    font-weight: lighter;
+    font-weight: bold;
+    margin-top: 0px;
     text-decoration: underline;
 }
 
 .store-logo {
     height: 45px;
     border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .product {
@@ -373,8 +379,13 @@ ul li {
 }
 
 .info-section {
-    margin-top: 100px;
+    position: absolute;
+    bottom: -30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
 }
 
 .text-section {
