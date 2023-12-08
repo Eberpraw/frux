@@ -165,7 +165,7 @@ ul li {
     height: 30px;
     display: inline-block;
     vertical-align: middle;
-    padding: 10px;
+    padding: 16px;
 
     transition-property: transform;
     transition-duration: 0.2s;
@@ -186,13 +186,13 @@ ul li {
 
 .boxed-form {
     position: absolute;
-    top: 200px;
+    top: 315px;
     right: 100px;
     background-color: #ffffff;
     width: 300px;
     border-radius: 25px;
     padding: 40px;
-    box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.05);
 }
 
 .Best_option_header {
@@ -417,3 +417,47 @@ ul li {
     font-size: 50px;
 }
 
+.grocery_list_bg {
+    background-color: #fdfdfd;
+    border-radius: 25px;
+    width: fit-content;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    padding-top: 1px;
+    margin-right: 25px;
+    border: solid;
+    border-color: whitesmoke;
+}
+
+.history-layout {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    margin-left: -40px;
+}
+
+.search-title {
+    font-size: 24px;
+    width: max-content;
+    text-decoration: none;
+}
+
+.history-items {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: max-content;
+    line-height: 20px;
+    list-style: circle;
+    padding-left: 0px;
+    list-style-position: inside;
+}
+
+.history-position {
+    padding-top: 50px;
+    padding-left: 90px;
+}
+
+.history-list-title {
+    font-size: 45px;
+}

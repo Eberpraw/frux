@@ -20,15 +20,15 @@
             </nav>
         </header>
 
-        <div>
-            <h2>Grocery List History</h2>
-            <ul>
+        <div class="history-position">
+            <h2 class="history-list-title">Grocery List History</h2>
+            <ul class="history-layout">
                 {% for index, items_list in enumerate(items_list_history, start=1) %}
                     <li class="grocery_list_bg">
                         <ul>
-                            <h2>Search {{ index }}</h2>
+                            <h2 class="search-title">List {{ index }}</h2>
                             {% for item in items_list %}
-                                <li>{{ item }}</li>
+                                <li class="history-items">{{ item }}</li>
                             {% endfor %}
                         </ul>
                     </li>
