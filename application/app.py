@@ -9,6 +9,7 @@ import os
 # Initializing a Flask web application
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
+app.jinja_env.globals.update(enumerate=enumerate)
 
 # Global variable that holds a list of items the user has chosen
 chosenItems = []
