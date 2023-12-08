@@ -211,6 +211,27 @@ ul li {
     border-radius: 10px;
 }
 
+/* footer styling */
+
+.footer {
+    margin-left: 1cm;
+    margin-top: -1.5cm;
+}
+
+.a {
+    text-decoration: none;
+    color: #404040;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.logo-footer {
+    width: auto;
+   height: 22px;
+   margin-bottom: 0.5cm;
+   margin-left: 1cm;
+}
+
 /* Styling for how it works subpage */
 
 .how-it-works-p {
@@ -294,37 +315,12 @@ ul li {
     margin-top: 0.5cm;
   }
 
-  .rounded-edges {
-    width: 350px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(3, 3, 0, 0.2);
-    margin-left: 1cm;
-    margin-top: 2cm;
-    float: left;
-    clear: left;
-  }
-  
-  .rounded-edges-1 {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(3, 3, 0, 0.2);
-    margin-right: 1cm;
-    position: relative;
-    top:-200px;
-    float: right;
-    clear: right;
-  }
 
   .colored-section {
     background-color: #c0c0c0;
     padding: 20px;
   }
 
-  .container {
-    display: flex;
-  }
 
 
   /* Styling for grocery list subpage */
