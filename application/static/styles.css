@@ -322,6 +322,64 @@ ul li {
   }
 
 
+  /* Styling for about subpage */
+
+  .about-us-title {
+    text-align: center; 
+    color: #404040;
+    line-height: 15px;
+    font-size: 40px;
+  }
+
+  .about-us-title::after {
+    content: ''; 
+    display: block;
+    width: 400px; 
+    height: 20px; 
+    background-color: #FF5A5F;
+    border-radius: 10px; 
+    position: relative;
+    bottom: -5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    box-shadow: 5px 5px 10px rgba(3, 3, 0, 0.2);
+  }
+
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .member {
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+  }
+
+  .member h2 {
+    color: #FF5A5F; 
+    margin-bottom: 10px; 
+    font-size: 24px; 
+    margin: 20px;
+    padding: 20px;
+}
+
+  .member-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .member-description {
+    list-style-type: circle;
+    padding: 0;
+  }
 
   /* Styling for grocery list subpage */
 
