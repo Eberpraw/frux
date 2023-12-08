@@ -20,19 +20,20 @@
             </nav>
         </header>
 
-        <div>
-            <h2>Grocery List History</h2>
-    <ul>
-        {% for items_list in items_list_history %}
-            <li class="grocery_list_bg">
-                <ul>
-                    {% for item in items_list %}
-                        <li>{{ item }}</li>
-                    {% endfor %}
-                </ul>
-            </li>
-        {% endfor %}
-    </ul>
+        <div class="history-position">
+            <h2 class="history-list-title">Grocery List History</h2>
+            <ul class="history-layout">
+                {% for index, items_list in enumerate(items_list_history, start=1) %}
+                    <li class="grocery_list_bg">
+                        <ul>
+                            <h2 class="search-title">List {{ index }}</h2>
+                            {% for item in items_list %}
+                                <li class="history-items">{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
 
     <form class="boxed-form" action="/profile/emilie" method="post">
@@ -84,52 +85,6 @@
         </div>
 
     </form>
-
-    <script>
-        // Function to load checkbox state from local storage
-        function loadCheckboxState(checkboxId) {
-            const checkbox = document.getElementById(checkboxId);
-            if (checkbox) {
-                const storedValue = localStorage.getItem(checkboxId);
-                checkbox.checked = storedValue === 'true';
-            } else {
-                console.error(`Checkbox with ID ${checkboxId} not found.`);
-            }
-        }
-            
-        // Function to save checkbox state to local storage
-        function saveCheckboxState(checkboxId, isChecked) {
-            localStorage.setItem(checkboxId, isChecked);
-        }
-    
-        // Load the state of each checkbox on page load
-        loadCheckboxState('føtex');
-        loadCheckboxState('rema1000');
-        loadCheckboxState('coop365');
-        loadCheckboxState('netto');
-        loadCheckboxState('lidl');
-    
-        // Add change event listeners to each checkbox
-        document.getElementById('føtex').addEventListener('change', function() {
-            saveCheckboxState('føtex', this.checked);
-        }); 
-    
-        document.getElementById('rema1000').addEventListener('change', function() {
-            saveCheckboxState('rema1000', this.checked);
-        }); 
-    
-        document.getElementById('coop365').addEventListener('change', function() {
-            saveCheckboxState('coop365', this.checked);
-        }); 
-    
-        document.getElementById('netto').addEventListener('change', function() {
-            saveCheckboxState('netto', this.checked);
-        }); 
-    
-        document.getElementById('lidl').addEventListener('change', function() {
-            saveCheckboxState('lidl', this.checked);
-        }); 
-    </script>
     
     </body>
 </html>
