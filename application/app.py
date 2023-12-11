@@ -99,7 +99,7 @@ def grocery_list():
 
 
 # Get the products from stores in database.csv
-def get_product_details(chosenItems_placeholder, favorite_stores):
+def get_product_details(chosenItems, favorite_stores):
     df = pd.read_csv(csv_url)
 
     # Convert 'Price (DKK)' column to numeric
@@ -107,7 +107,7 @@ def get_product_details(chosenItems_placeholder, favorite_stores):
 
 
     # Create a new variable with df variable, isin is a boolean that checks if chosenItem is in the database
-    filtered_df = df[(df['Supermarket'].isin(favorite_stores)) & (df['Product Name'].isin(chosenItems_placeholder))]
+    filtered_df = df[(df['Supermarket'].isin(favorite_stores)) & (df['Product Name'].isin(chosenItems))]
 
     # We use zip to combine name and price into a dictionary
     product_price = dict(zip(filtered_df['Product Name'], filtered_df['Price (DKK)']))
@@ -121,7 +121,7 @@ def get_product_details(chosenItems_placeholder, favorite_stores):
     return product_price
 
 # Function to get product details by store
-def get_product_details_by_store(chosenItems_placeholder, favorite_stores):
+def get_product_details_by_store(chosenItems, favorite_stores):
     df = pd.read_csv(csv_url)
 
     # Convert 'Price (DKK)' column to numeric
@@ -132,7 +132,7 @@ def get_product_details_by_store(chosenItems_placeholder, favorite_stores):
 
     # Iterate through the stores and chosen items to fill in the prices, and convert the product names to lowercase for case-insensitive
     for store in favorite_stores:
-        chosen_items_lower = [item.lower() for item in chosenItems_placeholder]
+        chosen_items_lower = [item.lower() for item in chosenItems]
         filtered_df = df[(df['Supermarket'] == store) & (df['Product Name'].str.lower().isin(chosen_items_lower))]
         prices = dict(zip(filtered_df['Product Name'], filtered_df['Price (DKK)']))
         total_price = sum(prices.values())

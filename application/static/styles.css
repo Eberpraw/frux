@@ -9,6 +9,12 @@ h2 {
     color: #404040;
 }
 
+h3 {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    color: #404040;
+}
+
 p {
     font-family: sans-serif;
     font-size: 16px;
@@ -511,6 +517,12 @@ ul li {
 
 .history-list-title {
     font-size: 45px;
+}
+
+.history-date {
+    font-size: medium;
+    color: gainsboro;
+    margin-top: -33px;
 }
 
 /* Styling for Contact subpage */
