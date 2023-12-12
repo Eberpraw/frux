@@ -97,29 +97,6 @@ def grocery_list():
     # Render the template with the prices
     return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, store_logos=store_logos, chosenItems=result)
 
-
-# Get the products from stores in database.csv
-def get_product_details(chosenItems, favorite_stores):
-    df = pd.read_csv(csv_url)
-
-    # Convert 'Price (DKK)' column to numeric
-    df['Price (DKK)'] = pd.to_numeric(df['Price (DKK)'])
-
-
-    # Create a new variable with df variable, isin is a boolean that checks if chosenItem is in the database
-    filtered_df = df[(df['Supermarket'].isin(favorite_stores)) & (df['Product Name'].isin(chosenItems))]
-
-    # We use zip to combine name and price into a dictionary
-    product_price = dict(zip(filtered_df['Product Name'], filtered_df['Price (DKK)']))
-
-    # Calculate the sum of prices
-    total_price = sum(product_price.values())
-
-    # Add total_price to the prices dictionary
-    product_price['Total'] = total_price
-
-    return product_price
-
 # Function to get product details by store
 def get_product_details_by_store(chosenItems, favorite_stores):
     df = pd.read_csv(csv_url)
