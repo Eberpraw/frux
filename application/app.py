@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, abort, session
 
-# Library to read CSV datamase
+# Library to read CSV database
 import pandas as pd
 
 # Library for secret key generation (for cache)
@@ -58,7 +58,7 @@ def grocery_list():
         if not item_input:
             return abort(400, "No items provided")
 
-        # We create a list of string where we strip spaces and separate items by a comma
+        # We take the string and separate items by comma and remove spaces
         items = []
         for item in item_input.split(','):
             items.append(item.strip())
@@ -75,10 +75,10 @@ def grocery_list():
         current_items_list.append(list(unique_items))
         session['items_list'] = current_items_list
 
-    # Get favorite stores from the last session
+    # Get favorite stores from session
     favorite_stores = session.get('favorite_stores', [])
 
-    # for loop to split up items to a list (separated by comma) # not a list comp anymore
+    # for loop to split up items to a list (separated by comma)
     result = []
     for sublist in chosenItems:
         for item in sublist.split(','):

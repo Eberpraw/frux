@@ -48,6 +48,11 @@ ul li {
     line-height: 95%;
 }
 
+.form-style {
+    text-align: center; 
+    padding-bottom: 60px;
+}
+
 .input {
 
     font-family: sans-serif;
