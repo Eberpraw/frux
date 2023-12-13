@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, abort, session
 
-# Library to read CSV datamase
+# Library to read CSV database
 import pandas as pd
 
 # Library for secret key generation (for cache)
@@ -43,7 +43,7 @@ def profile():
 
     favorite_stores = session.get('favorite_stores', [])
 
-     # Retrieve and display all different iterations of items from the session
+    # Retrieve and display all different iterations of items from the session
     items_list_history = session.get('items_list', [])
 
     return render_template("profile/emilie.html", favorite_stores=favorite_stores, items_list_history=items_list_history)
@@ -58,7 +58,7 @@ def grocery_list():
         if not item_input:
             return abort(400, "No items provided")
 
-        # We create a list of string where we strip spaces and separate items by a comma
+        # We take the string and separate items by comma and remove spaces
         items = []
         for item in item_input.split(','):
             items.append(item.strip())
@@ -75,15 +75,8 @@ def grocery_list():
         current_items_list.append(list(unique_items))
         session['items_list'] = current_items_list
 
-    # Get favorite stores from the last session
+    # Get favorite stores from session
     favorite_stores = session.get('favorite_stores', [])
-
-    # for loop to split up items to a list (separated by comma) # not a list comp anymore
-    result = []
-    for sublist in chosenItems:
-        for item in sublist.split(','):
-            result.append(item.strip())
-
 
     # Call the function to get prices based on chosen items
     supermarket_prices_by_store = get_product_details_by_store(chosenItems, favorite_stores)
@@ -95,7 +88,7 @@ def grocery_list():
     reset_chosenItems(chosenItems)
 
     # Render the template with the prices
-    return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, store_logos=store_logos, chosenItems=result)
+    return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, store_logos=store_logos, chosenItems=chosenItems)
 
 # Function to get product details by store
 def get_product_details_by_store(chosenItems, favorite_stores):
