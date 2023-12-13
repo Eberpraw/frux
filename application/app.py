@@ -43,7 +43,7 @@ def profile():
 
     favorite_stores = session.get('favorite_stores', [])
 
-     # Retrieve and display all different iterations of items from the session
+    # Retrieve and display all different iterations of items from the session
     items_list_history = session.get('items_list', [])
 
     return render_template("profile/emilie.html", favorite_stores=favorite_stores, items_list_history=items_list_history)
@@ -78,13 +78,6 @@ def grocery_list():
     # Get favorite stores from session
     favorite_stores = session.get('favorite_stores', [])
 
-    # for loop to split up items to a list (separated by comma)
-    result = []
-    for sublist in chosenItems:
-        for item in sublist.split(','):
-            result.append(item.strip())
-
-
     # Call the function to get prices based on chosen items
     supermarket_prices_by_store = get_product_details_by_store(chosenItems, favorite_stores)
 
@@ -95,7 +88,7 @@ def grocery_list():
     reset_chosenItems(chosenItems)
 
     # Render the template with the prices
-    return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, store_logos=store_logos, chosenItems=result)
+    return render_template("grocery-list.html", supermarket_prices_by_store=supermarket_prices_by_store, sorted_stores=sorted_stores, store_logos=store_logos, chosenItems=chosenItems)
 
 # Function to get product details by store
 def get_product_details_by_store(chosenItems, favorite_stores):
